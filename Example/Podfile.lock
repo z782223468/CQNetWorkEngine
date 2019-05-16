@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CQNetWorkEngine (0.1.0):
+    - Alamofire
+    - KKProgressToolbar
+    - SwiftyJSON (= 4.2.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - KKProgressToolbar (2.0.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - CQNetWorkEngine (from `../`)
+  - FBSnapshotTestCase (~> 2.1.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FBSnapshotTestCase
+    - KKProgressToolbar
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  CQNetWorkEngine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CQNetWorkEngine: a271c4eb417ae8aa2119f4490dc0cfb1b9840eda
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  KKProgressToolbar: a5e98a3334d4a7f36e06c399e29736033731513a
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: b9983d9c385e830aa2138bc806b9c26649e7a504
+
+COCOAPODS: 1.7.0.rc.1

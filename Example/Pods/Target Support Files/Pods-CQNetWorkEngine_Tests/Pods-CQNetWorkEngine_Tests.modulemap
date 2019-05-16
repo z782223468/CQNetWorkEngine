@@ -1,0 +1,6 @@
+framework module Pods_CQNetWorkEngine_Tests {
+  umbrella header "Pods-CQNetWorkEngine_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

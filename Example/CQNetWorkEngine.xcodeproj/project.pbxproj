@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		017B0119F82B99170CC44B93 /* Pods-CQNetWorkEngine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQNetWorkEngine_Tests.release.xcconfig"; path = "Target Support Files/Pods-CQNetWorkEngine_Tests/Pods-CQNetWorkEngine_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		16F6B94F228D0F0000D9E28E /* CQNetWorkEngine_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CQNetWorkEngine_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		2ECE98CC96D4636D94F9DF00 /* Pods-CQNetWorkEngine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQNetWorkEngine_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CQNetWorkEngine_Tests/Pods-CQNetWorkEngine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E027CF983625C7B3970D511 /* Pods-CQNetWorkEngine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQNetWorkEngine_Example.release.xcconfig"; path = "Target Support Files/Pods-CQNetWorkEngine_Example/Pods-CQNetWorkEngine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		47C6C4CBC825720464F44A97 /* Pods_CQNetWorkEngine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQNetWorkEngine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +44,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8948F9EB2B2868236CF6D203 /* Pods-CQNetWorkEngine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQNetWorkEngine_Example.debug.xcconfig"; path = "Target Support Files/Pods-CQNetWorkEngine_Example/Pods-CQNetWorkEngine_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D1F578DFEBD502FAAD9218EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DA2CFE5AC0FF1284F4211E2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F438F22BB4D3BB6CB15AAC63 /* CQNetWorkEngine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CQNetWorkEngine.podspec; path = ../CQNetWorkEngine.podspec; sourceTree = "<group>"; };
+		D1F578DFEBD502FAAD9218EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DA2CFE5AC0FF1284F4211E2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F438F22BB4D3BB6CB15AAC63 /* CQNetWorkEngine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CQNetWorkEngine.podspec; path = ../CQNetWorkEngine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F4EB3CD6A7F947666A0F6F36 /* Pods_CQNetWorkEngine_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQNetWorkEngine_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				16F6B94F228D0F0000D9E28E /* CQNetWorkEngine_Example-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,7 +158,6 @@
 				2ECE98CC96D4636D94F9DF00 /* Pods-CQNetWorkEngine_Tests.debug.xcconfig */,
 				017B0119F82B99170CC44B93 /* Pods-CQNetWorkEngine_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,7 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,11 +316,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CQNetWorkEngine_Example/Pods-CQNetWorkEngine_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CQNetWorkEngine/CQNetWorkEngine.framework",
+				"${BUILT_PRODUCTS_DIR}/KKProgressToolbar/KKProgressToolbar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CQNetWorkEngine.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KKProgressToolbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -443,6 +451,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -488,6 +497,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -497,13 +507,16 @@
 			baseConfigurationReference = 8948F9EB2B2868236CF6D203 /* Pods-CQNetWorkEngine_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CQNetWorkEngine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CQNetWorkEngine/CQNetWorkEngine_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -512,13 +525,15 @@
 			baseConfigurationReference = 3E027CF983625C7B3970D511 /* Pods-CQNetWorkEngine_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CQNetWorkEngine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CQNetWorkEngine/CQNetWorkEngine_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -539,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CQNetWorkEngine_Example.app/CQNetWorkEngine_Example";
 			};
 			name = Debug;
@@ -557,7 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CQNetWorkEngine_Example.app/CQNetWorkEngine_Example";
 			};
 			name = Release;

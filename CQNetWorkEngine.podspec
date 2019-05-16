@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'CQNetWorkEngine'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CQNetWorkEngine.'
+  s.summary          = '基于alamofire的简单封装'
+  s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +22,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/782223468@qq.com/CQNetWorkEngine'
+  s.homepage         = 'https://github.com/z782223468/CQNetWorkEngine'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '782223468@qq.com' => '782223468@qq.com' }
-  s.source           = { :git => 'https://github.com/782223468@qq.com/CQNetWorkEngine.git', :tag => s.version.to_s }
+  s.author           = { '陈清' => '782223468@qq.com' }
+  s.source           = { :git => 'https://github.com/z782223468/CQNetWorkEngine.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -39,4 +40,10 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.frameworks = 'UIKit'
+  s.dependency 'Alamofire'
+  s.dependency 'SwiftyJSON', '4.2.0'
+  s.dependency 'KKProgressToolbar'
+  
 end

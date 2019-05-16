@@ -1,0 +1,6 @@
+framework module CQNetWorkEngine {
+  umbrella header "CQNetWorkEngine-umbrella.h"
+
+  export *
+  module * { export * }
+}

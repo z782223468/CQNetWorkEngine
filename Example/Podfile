@@ -7,5 +7,8 @@ target 'CQNetWorkEngine_Example' do
     inherit! :search_paths
 
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
+#    pod 'Alamofire'
+#    pod 'SwiftyJSON', '~> 4.0'
+#    pod 'KKProgressToolbar'
   end
 end

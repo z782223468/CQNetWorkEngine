@@ -1,0 +1,6 @@
+framework module KKProgressToolbar {
+  umbrella header "KKProgressToolbar-umbrella.h"
+
+  export *
+  module * { export * }
+}
