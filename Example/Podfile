@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CQNetWorkEngine_Example' do
+  pod 'CQNetWorkEngine', :path => '../'
+
+  target 'CQNetWorkEngine_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
