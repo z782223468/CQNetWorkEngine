@@ -23,7 +23,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "Alamofire": [
-
+      "~> 4.7.0"
     ],
     "SwiftyJSON": [
       "4.2.0"

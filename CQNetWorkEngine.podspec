@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.frameworks = 'UIKit'
-  s.dependency 'Alamofire'
+  s.dependency 'Alamofire', '~> 4.7.0'
   s.dependency 'SwiftyJSON', '4.2.0'
   s.dependency 'KKProgressToolbar'
   

@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (4.8.2)
+  - Alamofire (4.7.3)
   - CQNetWorkEngine (0.1.0):
-    - Alamofire
+    - Alamofire (~> 4.7.0)
     - KKProgressToolbar
     - SwiftyJSON (= 4.2.0)
   - FBSnapshotTestCase (2.1.4):
@@ -28,8 +28,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  CQNetWorkEngine: a271c4eb417ae8aa2119f4490dc0cfb1b9840eda
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CQNetWorkEngine: 7fdd27d08c6c78e7c0f3be08627bb81590937451
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   KKProgressToolbar: a5e98a3334d4a7f36e06c399e29736033731513a
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
