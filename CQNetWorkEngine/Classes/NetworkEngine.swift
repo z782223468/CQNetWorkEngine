@@ -34,7 +34,7 @@ public class NetworkEngine: NSObject, KKProgressToolbarDelegate {
     var downloadRequest: DownloadRequest?
     
     
-    var headers: HTTPHeaders!       //配置header
+    public var headers: HTTPHeaders!       //配置header
     
     
     /**
